@@ -13,3 +13,10 @@ type: Outdoor Plug
 standard: us
 ---
 The outlet strip is held together with screws, thus allowing for easy disassembly and reassembly.  I loosely followed [this article](http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet) for pinout guidance, as it is the same chip and logic board
+
+## Serial Flashing
+This plug uses the same ESP chip as the WiOn 50050 and the ECO Plugs CT-065W. When you power it on, if in programming mode, the light may flicker once, then there are no lights on the board.  If you see a flashing blue light, you are *NOT* in flashing mode.
+
+When flashing the chip, make sure to connect GPIO-0 to go Ground/GND so it boots in flash mode. [breakout image](http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet)
+
+Additional info is on this [blog] (http://www.hagensieker.com/blog/page/?post_id=44&title=esp8266-hack-of-inexpensive-wifi-outlet)
